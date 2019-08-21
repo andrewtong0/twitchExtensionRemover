@@ -1,0 +1,14 @@
+{
+  "name": "Twitch Extension Remover",
+  "short_name": "Twitch Extension Remover",
+  "version": "0.0.0.1",
+  "description": "Removes annoying Twitch extensions and re-enables the ability to double-click and full screen.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.twitch.tv/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "manifest_version": 2
+}
